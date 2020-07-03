@@ -67,8 +67,8 @@ cat wb.txt  | grep -P "\w+\.txt(\?|$)" | sort -u  | tee -a robots.txt
 
 cd ..
 
-echo "Looking for HTTP request smugglig"
-python3 ~/tools/smuggler.py -u alive.txt | tee -a smuggler_op.txt
+echo "Looking for HTTP request smuggling"
+python3 ~/tools/Smuggler/smuggler.py -u alive.txt | tee -a smuggler_op.txt
 
 mkdir scripts
 mkdir scriptsresponse
